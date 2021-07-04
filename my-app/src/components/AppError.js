@@ -5,11 +5,12 @@ const ErrorComponent = () => {
 };
 
 export class AppError extends React.Component {
+  
   state = {
     hasError: false,
   };
 
-  static getDerivedStateFromError = (error) => {
+  static getDerivedStateFromError = error => {
     return { hasError: true };
   };
 
